@@ -1,0 +1,6 @@
+{
+  "name": "El Hakouni — Développeur Mobile Android & Full-Stack",
+  "description": "Portfolio interactif d'El Hakouni, développeur mobile Android (Kotlin, Jetpack Compose) et full-stack basé au Maroc. Applications simples, rapides et multilingues.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

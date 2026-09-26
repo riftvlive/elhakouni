@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --sand-bg: #F7F2E8;
+    --sand-surface: #EFE7D7;
+    --sand-card: #FFFFFF;
+    --sand-card-hover: #FBF8F2;
+    --sand-line: rgba(36, 31, 23, 0.12);
+    --sand-ink: #201B14;
+    --sand-ink-muted: #5E5648;
+    --sand-teal: #0E6E63;
+    --sand-teal-light: #E6F3F1;
+    --sand-clay: #B5502F;
+    --sand-gold: #B98B2E;
+  }
+
+  .dark {
+    --sand-bg: #14120E;
+    --sand-surface: #1E1B15;
+    --sand-card: #181510;
+    --sand-card-hover: #221E18;
+    --sand-line: rgba(241, 233, 216, 0.12);
+    --sand-ink: #F3EBDD;
+    --sand-ink-muted: #A89D88;
+    --sand-teal: #3FA598;
+    --sand-teal-light: #163330;
+    --sand-clay: #D97A55;
+    --sand-gold: #E5B869;
+  }
+
+  body {
+    background-color: var(--sand-bg);
+    color: var(--sand-ink);
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  [dir="rtl"] body,
+  [dir="rtl"] {
+    font-family: 'IBM Plex Sans Arabic', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Fraunces', serif;
+  font-optical-sizing: auto;
+}
+
+.font-arabic {
+  font-family: 'IBM Plex Sans Arabic', system-ui, sans-serif;
+}
+
+.font-mono-numbers {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--sand-line);
+  border-radius: 4px;
+}
